@@ -177,3 +177,20 @@ new_date = datetime.strptime(start_date, fmt)
 todate = datetime.now()
 
 print(new_date)
+
+   Login Form test Cases::
+            from django.contrib.auth.models import User
+from django.contrib.auth import SESSION_KEY
+from django.test import TestCase
+
+class LogInTest(TestCase):
+    def setUp(self):
+        self.credentials = {
+            'username': 'Saruni',
+            'password': 'secret'}
+        User.objects.create_user(**self.credentials)
+    def test_login(self):
+        # login
+        response = self.client.post('/login/', **self.credentials)      
+        # should be logged in now, fails however
+        self.assertTrue(response.context['user'].is_active)
