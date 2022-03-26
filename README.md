@@ -13,6 +13,15 @@ MODELS
 we wrote test for models.
 Here you will see that we first imported TestCase and derived our test classes from it, using descriptive names so that we can easily identify any failing tests in the test output. We then call setUpTestData() to create objects that we will use but not modify in any of the test methods.
 
+The field tests check that the values of the field labels (verbose_name) and that the size of the character fields are as expected. These methods all have descriptive names, and follow the same pattern:
+
+        # Get an author object to test
+        unit = RegOrgUnit.objects.get(id=1)
+        # Get the metadata for the required field and use it to query the required field data
+        field_label = unit._meta.get_field('org_unit_id_vis').verbose_name
+        # Compare the value to the expected result
+        self.assertEqual(field_label, 'org unit id vis')
+
 FORMS
 Tests for forms are also written
 currently tests for user login forms are done.
