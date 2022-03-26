@@ -30,6 +30,13 @@ HTML
 Ensured all htmls unclosed tags are closed
 
 VIEWS
-Currently working on views
+Complete tests for views
+
+        # When retrieving pages, remember to specify the path of the URL, not the whole domain.
+        response = self.client.post(self.register_details_url, org_id=2 )
+        # test expected response
+        self.assertEquals(response.status_code, 200)
+        # Test that a given request is rendered by a given Django template.
+        self.assertTemplateUsed(response, 'registry/org_units_details.html')
 
 
