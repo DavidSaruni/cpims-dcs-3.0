@@ -40,8 +40,8 @@ Complete tests for views
         self.assertTemplateUsed(response, 'registry/org_units_details.html')
 
 GROUP MEMEBER
-1. DAVID SARUNI
-2. MICHOMA PETER
-3. SHARON JEPNGETICH
-4. ASHIOYA JOTHAM
-5. IMMANUEL KIMANI
+1. DAVID SARUNI, 0796789225, sarunidavid11126@gmail.com, https://github.com/DavidSaruni
+2. MICHOMA PETER, 0710174169, michomapeter67@gmail.com, github.com/Michomapeter
+3. SHARON JEPNGETICH, 0729258337, jepngetichs65@gmail.com, https://github.com/Sharonjep 
+4. ASHIOYA JOTHAM, 0792798789, victorashioya960@gmail.com, github.com/ashioyajotham
+5. IMMANUEL KIMANI, 0704637682,immanuel4082@gmail.com, github.com/immanuel4082
