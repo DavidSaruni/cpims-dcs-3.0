@@ -39,4 +39,9 @@ Complete tests for views
         # Test that a given request is rendered by a given Django template.
         self.assertTemplateUsed(response, 'registry/org_units_details.html')
 
-
+GROUP MEMEBER
+1. DAVID SARUNI
+2. MICHOMA PETER
+3. SHARON JEPNGETICH
+4. ASHIOYA JOTHAM
+5. IMMANUEL KIMANI
